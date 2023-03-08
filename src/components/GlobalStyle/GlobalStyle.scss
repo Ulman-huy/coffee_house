@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
+@import 'normalize.css';
+
+:root {
+    --white-color: rgb(238, 238, 238);
+    --black-background-color: rgba(18, 18, 18);
+    --red-color: rgb(255, 59, 92);
+    --hover-background: rgba(221, 221, 221, .5);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--black-background-color);
+    color: var(--white-color);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc; 
+  }
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
