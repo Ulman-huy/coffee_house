@@ -1,0 +1,83 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--grey-background);
+}
+.grid-container {
+    width: calc(var(--width-default) + 50px);
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, 50%);
+    gap: 30px;
+}
+.product-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        .image-1 {
+            transform: scale(1.1);
+            filter: grayscale(30%) blur(0);
+        }
+        .btn {
+            background-color: var(--yellow-color);
+        }
+    }
+}
+.image-1 {
+    position: absolute;
+    object-fit: contain;
+    height: 550px;
+    transition: transform 0.5s ease-in-out, filter 1s ease;
+    filter: grayscale(100%) blur(2px);
+}
+.product-2, .product-3, .product-4, .product-5 {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        .image-2, .image-3, .image-4, .image-5 {
+            transform: scale(1.1);
+            filter: grayscale(30%) blur(0);
+        }
+        .btn {
+            background-color: var(--yellow-color);
+        }
+    }
+}
+.image-2, .image-3, .image-4, .image-5 {
+    position: absolute;
+    object-fit: contain;
+    height: 550px;
+    transition: transform 0.5s ease-in-out, filter 1s ease;
+    filter: grayscale(100%) blur(2px);
+}
+.btn {
+    z-index: 10;
+    padding: 16px 24px;
+    border: 3px solid var(--yellow-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--white-color);
+    transition: background-color 0.5s ease-in-out;
+    font-size: 17px;
+}

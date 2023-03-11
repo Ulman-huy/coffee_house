@@ -1,0 +1,110 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-color: var(--grey-background);
+}
+.container {
+    width: calc(var(--width-default) + 24px);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    position: relative;
+    &:hover {
+        .btn-slider {
+            opacity: 1;
+        }
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h1 {
+        font-family: "Pacifico", cursive;
+        color: var(--yellow-color);
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+.nav-product {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.product-item {
+    margin: 0 6px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        text-shadow: 0 0 4px var(--yellow-color);
+        color: var(--yellow-color);
+        text-decoration: underline;
+    }
+    &.active {
+        text-shadow: 0 0 4px var(--yellow-color);
+        color: var(--yellow-color);
+        text-decoration: underline;
+    }
+    p {
+        margin: 0;
+    }
+}   
+.content {
+    height: 450px;
+    width: calc(100% + 20px);
+    margin-left: -12px;
+}
+.btn-slider {
+    position: absolute;
+    width: calc(var(--width-default) + 60px);
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: -18px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.next, .prev {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        color: var(--red-color);
+        text-shadow: 0 0 4px var(--red-color);
+    }
+}
+.more {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        text-shadow: 0 0 4px var(--yellow-color);
+        color: var(--yellow-color);
+        text-decoration: underline;
+    }
+}

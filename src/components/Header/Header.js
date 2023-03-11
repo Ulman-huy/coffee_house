@@ -25,6 +25,11 @@ function Header() {
             to:'/store'
         },
         {
+            title: "Khám phá",
+            to: '/discover'
+
+        },
+        {
             title: 'Liên hệ',
             to:'/contact'
         }

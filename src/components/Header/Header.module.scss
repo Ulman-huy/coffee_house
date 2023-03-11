@@ -1,11 +1,15 @@
 .header{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--header-background-color);
 }
 .wrapper {
-    width: 1150px;
+    width: var(--width-default);
     display: flex;
     justify-content: space-between;
     align-items: center;

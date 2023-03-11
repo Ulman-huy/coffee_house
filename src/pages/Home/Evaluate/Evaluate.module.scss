@@ -1,0 +1,113 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    padding: 60px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: var(--width-default);
+}
+.content {
+    width: var(--width-default);
+}
+.arrows {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+}
+.next, .prev {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        color: var(--red-color);
+        text-shadow: 0 0 4px var(--red-color);
+    }
+}
+.evaluate-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--yellow-color);
+    word-spacing: 4px;
+}
+.avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+    margin: 8px 0;
+    img {
+        width: 80px;
+        object-fit: contain;
+    }
+}
+.text {
+    color: var(--text-grey-color);
+    text-align: center;
+    max-width: 660px;
+    i {
+        line-height: 25px;
+        font-weight: 400;
+    }
+}
+.name {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    p {
+        margin-bottom: 0;
+    }
+}
+.career {
+    p {
+        margin-top: 4px;
+        color: var(--yellow-color);
+        font-weight: 600;
+    }
+}
+.contact {
+    display: flex;
+    margin-top: 8px;
+}
+.icon {
+    margin: 0 8px;
+    display: flex;
+    font-size: 14px;
+    width: 15px;
+    height: 15px;
+    svg {
+        color: var(--white-color);
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+    &:hover {
+        svg {
+            color: var(--red-color);
+            text-shadow: 0 0 4px;
+        }
+    }
+}
